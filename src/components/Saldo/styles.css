@@ -1,0 +1,15 @@
+
+.container--saldo{
+display:flex;
+justify-content:center;
+align-items:center;
+position: relative;
+top:100px;
+
+}
+
+label{
+font-size:2rem;
+font-weight:600;
+width:578px;
+}
