@@ -11,7 +11,7 @@ const Deposito = ({updateSaldo}) =>{
   return(
    <div className="container"> 
     <input placeholder='indique monto' type='text' ref={x}></input>
-    <button onClick={() => {updateSaldo(x.current.value)}} >Depositar</button>
+    <button onClick={() => {parseInt(updateSaldo(x.current.value))}} >Depositar</button>
    </div>
   )
   

@@ -5,11 +5,20 @@ import {showSaldo} from '../../store/reducers/rootReducers'
 
 const Saldo = (props) =>{
 const {monto} = props
-return(
-    <div className='container--saldo'>
-        <label>Saldo Disponible  {monto}</label>
-    </div>
-)
+
+    if(!isNaN(monto)){
+    return(
+        <div className='container--saldo'>
+            <label>Saldo Disponible  {monto}</label>
+        </div>
+    )
+    }else{
+        return(
+        <div className='container--saldo'>
+        <label>debes ingresar un monto</label>
+        </div>
+        )
+    }
 }
 
 const mapStateToProp= state =>{
